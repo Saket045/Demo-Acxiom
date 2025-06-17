@@ -1,0 +1,45 @@
+managed implementation in class ZBP_R_TRANSACTIONS_X000 unique;
+strict ( 2 );
+
+define behavior for ZR_TRANSACTIONS_X000 alias ZrTransactionsX000
+persistent table ZTRANSACTIONS_X
+
+etag master LocalLastChangedAt
+lock master
+authorization master( global )
+
+{
+  field ( mandatory : create )
+   TransactionId;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangedAt;
+
+  field ( readonly : update )
+   TransactionId;
+
+
+  create;
+  update;
+  delete;
+
+  mapping for ZTRANSACTIONS_X
+  {
+    TransactionId = transaction_id;
+    StudentId = student_id;
+    BookId = book_id;
+    IssueDate = issue_date;
+    DueDate = due_date;
+    ReturnDate = return_date;
+    Status = status;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LocalLastChangedBy = local_last_changed_by;
+    LocalLastChangedAt = local_last_changed_at;
+    LastChangedAt = last_changed_at;
+  }
+}

@@ -1,0 +1,6 @@
+@EndUserText.label: 'Parent view'
+define service ZUI_LIBRARY_X_O2 {
+  expose ZC_BOOKS_X           as Books;
+  expose ZC_STUDENTS_X        as Students;
+  expose ZC_TRANSACTIONS_X000 as Transactions;
+}

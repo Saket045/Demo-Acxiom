@@ -1,0 +1,43 @@
+managed implementation in class ZBP_R_BOOKS_X unique;
+strict ( 2 );
+
+define behavior for ZR_BOOKS_X alias ZrBooksX
+persistent table ZBOOKS_X
+
+etag master LocalLastChangedAt
+lock master
+authorization master( global )
+
+{
+//  field ( mandatory : create )
+//   BookId;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangedAt;
+
+  field ( readonly : update )
+   BookId;
+
+
+  create;
+  update;
+  delete;
+
+  mapping for ZBOOKS_X
+  {
+    BookId = book_id;
+    BookTitle = book_title;
+    Author = author;
+    TotalCopies = total_copies;
+    AvailableCopies = available_copies;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LocalLastChangedBy = local_last_changed_by;
+    LocalLastChangedAt = local_last_changed_at;
+    LastChangedAt = last_changed_at;
+  }
+}

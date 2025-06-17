@@ -1,0 +1,167 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'TransactionId'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'TransactionId'
+annotate view ZC_TRANSACTIONS_X000 with
+{
+  @EndUserText.label: 'TransactionId'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'TransactionId'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'TransactionId'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  TransactionId;
+  
+  @EndUserText.label: 'StudentId'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'StudentId'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'StudentId'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  StudentId;
+  
+  @EndUserText.label: 'BookId'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'BookId'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'BookId'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  BookId;
+  
+  @EndUserText.label: 'IssueDate'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'IssueDate'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'IssueDate'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  IssueDate;
+  
+  @EndUserText.label: 'DueDate'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'DueDate'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'DueDate'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  DueDate;
+  
+  @EndUserText.label: 'ReturnDate'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'ReturnDate'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'ReturnDate'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  ReturnDate;
+  
+  @EndUserText.label: 'Status'
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'Status'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'Status'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  Status;
+  
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  @UI.lineItem: [ {
+    position: 100 
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  LocalLastChangedBy;
+  
+  @UI.identification: [ {
+    position: 110 
+  } ]
+  @UI.lineItem: [ {
+    position: 110 
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  LocalLastChangedAt;
+  
+  @UI.identification: [ {
+    position: 120 
+  } ]
+  @UI.lineItem: [ {
+    position: 120 
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  LastChangedAt;
+}
